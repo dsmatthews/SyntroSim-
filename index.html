@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntropic Agriculture Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        #canvasContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        #stats {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Syntropic Agriculture Simulation</h1>
+    <div id="canvasContainer"></div>
+    <div id="stats"></div>
+    <script src="simulation.js"></script>
+</body>
+</html>
+
