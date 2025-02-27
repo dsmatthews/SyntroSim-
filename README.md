@@ -1,4 +1,4 @@
-This JavaScript simulation models a **syntropic agriculture ecosystem** using a **3D grid**, where different plant species (protocells) interact, grow, compete, and reproduce based on **energy availability** and **cooperation factors**. The code initializes a grid, populates it with various species, updates their energy levels, and renders their evolution over time.
+This JavaScript simulation models a **syntropic agriculture ecosystem** using a **3D grid**, where different plant species (protocells) interact, grow, compete, and reproduce based on **energy availability** and **cooperation factors**. The code initializes a grid, populates it with various species, updates their energy levels, and renders their evolution over time. It is like a game of Go (囲碁) but in 3D and with potentially hundreds of players, plus all of the usual ecosystem dynamics. It would be interesting to teach an AI to "understand" this well enough to help manage such a system in a productive and sustainable manner.
 
 ---
 
