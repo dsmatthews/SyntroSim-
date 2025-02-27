@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Syntropic Agriculture Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #rendererContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #stats {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        #controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        #slices {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+        canvas.slice {
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="rendererContainer"></div>
+    <div id="stats"></div>
+    <div id="controls">
+        <label>X Slice: <input type="range" id="xSlice" min="0" max="11" value="5"></label><br>
+        <label>Y Slice: <input type="range" id="ySlice" min="0" max="8" value="4"></label><br>
+        <label>Z Slice: <input type="range" id="zSlice" min="0" max="11" value="5"></label>
+    </div>
+    <div id="slices">
+        <canvas id="xSliceCanvas" class="slice" width="120" height="90"></canvas>
+        <canvas id="ySliceCanvas" class="slice" width="120" height="120"></canvas>
+        <canvas id="zSliceCanvas" class="slice" width="120" height="90"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="simulation.js"></script>
+</body>
+</html>
